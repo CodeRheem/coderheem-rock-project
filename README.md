@@ -22,6 +22,7 @@ sprintfixer-frontend/
 ├── Dockerfile
 ├── nginx.conf
 └── README.md
+```
 ---
 ## 🚀 Tech Stack
 
@@ -35,6 +36,7 @@ sprintfixer-frontend/
 
 5. Node 20 Alpine (for lightweight Docker builds)
 ---
+
 ## 🔧 Getting Started (Development)
 
 ### Prerequisites
@@ -45,6 +47,7 @@ sprintfixer-frontend/
 
 3. Docker (optional for containerized development)
 ---
+
 ## Local Development
 
 ```bash
