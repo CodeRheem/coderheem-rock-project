@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import Contact from "./pages/Contact";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/Homepage/HomePage";
 import WhoWeAre from "./pages/WhoWeAre";
 
 function App() {

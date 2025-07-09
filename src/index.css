@@ -2,42 +2,21 @@
 
 @import "tailwindcss";
 
-@theme {
-  /* Primary color */
-  --color-primary: #006d5a;
-
-  /* Secondary colors */
-  --color-secondary-200: #fed16a;
-  --color-secondary-300: #fff4a4;
-  --color-secondary-400: #fff1c1;
-  --color-secondary-500: #ff942d;
-
-  /* Background colors */
-  --color-background: #fff;
-  --color-background-dark: #000;
-  --color-background-primary: #006d5a;
-
-  /* Text color */
-  --color-text-primary: #000;
-  --color-text-primary-dark: #c3c3c3;
-  --color-text-secondary: #777;
-  --color-text-secondary-dark: #c3c3c3;
-}
-
 @layer base {
   :root {
-    /* Light mode (default) */
-    --bg-main: var(--color-background);
-    --bg-green: var(--color-background-primary);
-    --text-main: var(--color-text-primary);
-    --text-secondary: var(--color-text-secondary);
-    --bg-btn: var(--color-secondary-200);
-    --text-active: var(--color-secondary-500);
+    --bg-main: #fff;
+    --bg-green: #006d5a;
+    --text-main: #000;
+    --text-secondary: #777;
+    --bg-btn: #fff4a4;
+    --primary-color: #006d5a;
+    --accent-clr: #fff1c1;
+    --accent-clr-200: #ff942d;
   }
 
   body {
-    background-color: var(--color-background);
-    color: var(--color-text-primary);
+    background-color: var(--bg-main);
+    color: var(--text-main);
     font-family: "Poppins", sans-serif;
   }
 }
@@ -45,7 +24,7 @@
 /* Active state of navlinks */
 nav {
   a.active {
-    color: var(--text-active);
+    color: var(--accent-clr-200);
   }
 }
 
