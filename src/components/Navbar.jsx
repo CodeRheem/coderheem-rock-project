@@ -1,10 +1,17 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const location = useLocation(); // Get current route
+
+  // Close menu when route changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]); // Run whenever pathname changes
 
   function handleToggleMenu() {
     setIsMenuOpen(!isMenuOpen);
