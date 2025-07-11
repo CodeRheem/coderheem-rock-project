@@ -31,6 +31,7 @@
     --bg-green: var(--color-background-primary);
     --text-main: var(--color-text-primary);
     --text-secondary: var(--color-text-secondary);
+    --text-tertiary: var(--color-secondary-300);
     --bg-btn: var(--color-secondary-200);
     --text-active: var(--color-secondary-500);
   }
@@ -41,6 +42,16 @@
     font-family: "Poppins", sans-serif;
   }
 }
+
+  @layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
 
 /* Active state of navlinks */
 nav {
