@@ -2,13 +2,15 @@ import { useState } from "react";
 
 function WhatWeOffer() {
   const [slide, setSlide] = useState(0);
-  const backgrounds = ['verified_artisans', 'marketplace', 'customer_support','localized_product'];
-  const title = ['Verified Artisans', 'A Marketplace', 'Great Customer support system','Localized product thinking'];
+  const backgrounds = ['verified_artisans', 'marketplace', 'customer_support','localized_product','inclusive_onboarding','in_app_wallet'];
+  const title = ['Verified Artisans', 'A Marketplace', 'Great Customer support system','Localized product thinking','Inclusive onboarding','In App Wallet'];
   const content = [
     'We verify artisans through a structured onboarding process to ensure reliability, safety, and professionalism.',
     'A list of trustworthy, recommended dealers to buy artisan-recommended tools, parts, and home essentials directly within the app',
     'Fast-response bot with human fallback',
-    'Voice notes, local languages, intuitive interfaces for low-literacy users.'
+    'Voice notes, local languages, intuitive interfaces for low-literacy users.',
+    'Freemium access for artisans and tiered access to more tools.',
+    'A secure digital wallet that lets users pay, store balance, and track transactions, all in one place.'
   ];
 
   let slides = []
