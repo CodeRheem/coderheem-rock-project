@@ -19,7 +19,7 @@ function Footer() {
         {/* Get in Touch */}
         <article>
           <h3 className="mb-5 font-bold text-xl">Get in touch</h3>
-          <p className="font-[sans] text-[var(--text-secondary)] mb-10 text-base font-medium ">
+          <p className="text-[var(--text-secondary)] mb-10 text-base font-medium ">
             Sprintfixer - Trusted hands, at your service.
           </p>
           <div className="flex space-x-4 footer-icons">
