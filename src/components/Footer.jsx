@@ -15,7 +15,7 @@ function Footer() {
   return (
     <footer className="pt-24">
       {/* 3 Column Grid Section */}
-      <section className="py-16 px-8 md:px-16 mx-auto gap-10 justify-between grid grid-cols-1 md:[grid-template-columns:2fr_1fr_1fr] px-3 2xl:px-0">
+      <section className="py-16 px-8 md:px-16 mx-auto gap-10 justify-between grid grid-cols-1 md:[grid-template-columns:2fr_1fr_1fr] 2xl:px-0">
         {/* Get in Touch */}
         <article>
           <h3 className="mb-5 font-bold text-xl">Get in touch</h3>

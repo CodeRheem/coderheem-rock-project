@@ -29,7 +29,7 @@ function WhatWeOffer() {
   const afterNext = (slide + 2) % backgrounds.length;
 
   return (
-    <section className={`my-16 py-16 px-8 md:pl-16 md:pr-0 flex gap-16 flex-col bg-[url(Images/${backgrounds[mainSlide]}_bg.jpg)] bg-[var(--bg-green)] bg-blend-multiply bg-cover bg-center`}>
+    <section className={`my-16 py-16 px-8 md:pl-16 md:pr-0 flex gap-16 flex-col bg-[url(images/${backgrounds[mainSlide]}_bg.jpg)] bg-[var(--bg-green)] bg-blend-multiply bg-cover bg-center`}>
       <h1 className="font-bold text-[var(--color-secondary-400)]">What We Offer</h1>
       <div className="flex gap-8 items-center w-full">
         <div className="flex flex-col gap-8 w-2/5">
@@ -41,9 +41,9 @@ function WhatWeOffer() {
         </div>
 
         <div className="flex gap-4 items-baseline w-3/5 overflow-hidden">
-          <div className={`shrink-0 w-91.5 border-white rounded-4xl border-3 h-102.5 bg-[url(Images/${backgrounds[mainSlide]}.jpg)] bg-cover bg-center`} />
-          <div className={`shrink-0 w-61  rounded-4xl h-75.5 bg-[url(Images/${backgrounds[nextSlide]}.jpg)] bg-cover bg-center`} onClick={() => changeSlide(1)} />
-          <div className={`shrink-0 w-61  rounded-4xl h-75.5 bg-[url(Images/${backgrounds[afterNext]}.jpg)] bg-cover bg-center`} onClick={() => changeSlide(2)} />
+          <div className={`shrink-0 w-91.5 border-white rounded-4xl border-3 h-102.5 bg-[url(images/${backgrounds[mainSlide]}.jpg)] bg-cover bg-center`} />
+          <div className={`shrink-0 w-61  rounded-4xl h-75.5 bg-[url(images/${backgrounds[nextSlide]}.jpg)] bg-cover bg-center`} onClick={() => changeSlide(1)} />
+          <div className={`shrink-0 w-61  rounded-4xl h-75.5 bg-[url(images/${backgrounds[afterNext]}.jpg)] bg-cover bg-center`} onClick={() => changeSlide(2)} />
         </div>
       </div>
 
