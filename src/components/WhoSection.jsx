@@ -13,7 +13,7 @@ function WhoSection() {
         <div
           className="aspect-square inline-flex w-[300px] border-12 border-[var(--text-active)] rounded-full bg-cover"
           style={{
-            backgroundImage: `url(/Images/whosection_image.png)`,
+            backgroundImage: `url(../assest/Images/whosection_image.png)`,
             backgroundPosition: "0px -30px",
           }}
         ></div>

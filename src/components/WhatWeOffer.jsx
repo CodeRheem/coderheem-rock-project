@@ -46,7 +46,7 @@ function WhatWeOffer() {
     <section
       className="my-16 py-16 px-8 md:pl-16 md:pr-0 flex gap-16 flex-col bg-[var(--bg-green)] bg-blend-multiply bg-cover bg-center"
       style={{
-        backgroundImage: `url(/Images/${backgrounds[mainSlide]}_bg.jpg)`,
+        backgroundImage: `url(../assest/Images/${backgrounds[mainSlide]}_bg.jpg)`,
       }}
     >
       <h1 className="font-bold text-[var(--color-secondary-400)]">
@@ -69,20 +69,20 @@ function WhatWeOffer() {
           <div
             className="shrink-0 w-full md:w-91.5 border-white rounded-4xl border-3 h-102.5 bg-cover bg-center"
             style={{
-              backgroundImage: `url(/Images/${backgrounds[mainSlide]}.jpg)`,
+              backgroundImage: `url(../assest/Images/${backgrounds[mainSlide]}.jpg)`,
             }}
           />
           <div
             className="shrink-0 w-61 rounded-4xl h-75.5 bg-cover bg-center cursor-pointer"
             style={{
-              backgroundImage: `url(/Images/${backgrounds[nextSlide]}.jpg)`,
+              backgroundImage: `url(../assest/Images/${backgrounds[nextSlide]}.jpg)`,
             }}
             onClick={() => changeSlide(1)}
           />
           <div
             className="shrink-0 w-61 rounded-4xl h-75.5 bg-cover bg-center cursor-pointer"
             style={{
-              backgroundImage: `url(/Images/${backgrounds[afterNext]}.jpg)`,
+              backgroundImage: `url(../assest/Images/${backgrounds[afterNext]}.jpg)`,
             }}
             onClick={() => changeSlide(2)}
           />
