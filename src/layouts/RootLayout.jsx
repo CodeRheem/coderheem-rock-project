@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 function RootLayout() {
@@ -8,6 +9,7 @@ function RootLayout() {
       <main className="flex-grow">
         <Outlet />
       </main>
+      <Footer />
     </section>
   );
 }

@@ -5,7 +5,6 @@ import WhatWeOffer from "../components/WhatWeOffer";
 import WhoSection from "../components/WhoSection";
 import Whowe from "../components/Whowe";
 import WorkTogether from "../components/WorkTogether";
-import Footer from "../components/Footer";
 
 function WhoWeAre() {
   return (
@@ -17,7 +16,6 @@ function WhoWeAre() {
     <OurVision/>
     <WhatWeOffer/>
     <WorkTogether/>
-    <Footer/>
   </section>);
 }
 
