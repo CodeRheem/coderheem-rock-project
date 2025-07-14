@@ -1,4 +1,14 @@
 import { useState } from "react";
+const rawImages = import.meta.glob('../assets/Images/*.jpg', { eager: true });
+
+const images = {};
+
+for (const path in rawImages) {
+  const fileName = path.split('/').pop().replace('.jpg', '');
+  images[fileName] = rawImages[path].default;
+}
+
+
 
 function WhatWeOffer() {
   const [slide, setSlide] = useState(0);
@@ -46,7 +56,7 @@ function WhatWeOffer() {
     <section
       className="my-16 py-16 px-8 md:pl-16 md:pr-0 flex gap-16 flex-col bg-[var(--bg-green)] bg-blend-multiply bg-cover bg-center"
       style={{
-        backgroundImage: `url(../assest/Images/${backgrounds[mainSlide]}_bg.jpg)`,
+        backgroundImage: `url(${images[backgrounds[mainSlide] + '_bg']})`,
       }}
     >
       <h1 className="font-bold text-[var(--color-secondary-400)]">
@@ -69,20 +79,20 @@ function WhatWeOffer() {
           <div
             className="shrink-0 w-full md:w-91.5 border-white rounded-4xl border-3 h-102.5 bg-cover bg-center"
             style={{
-              backgroundImage: `url(../assest/Images/${backgrounds[mainSlide]}.jpg)`,
+              backgroundImage: `url(${images[backgrounds[mainSlide]]})`,
             }}
           />
           <div
             className="shrink-0 w-61 rounded-4xl h-75.5 bg-cover bg-center cursor-pointer"
             style={{
-              backgroundImage: `url(../assest/Images/${backgrounds[nextSlide]}.jpg)`,
+              backgroundImage: `url(${images[backgrounds[nextSlide]]})`,
             }}
             onClick={() => changeSlide(1)}
           />
           <div
             className="shrink-0 w-61 rounded-4xl h-75.5 bg-cover bg-center cursor-pointer"
             style={{
-              backgroundImage: `url(../assest/Images/${backgrounds[afterNext]}.jpg)`,
+              backgroundImage: `url(${images[backgrounds[afterNext]]})`,
             }}
             onClick={() => changeSlide(2)}
           />
@@ -95,7 +105,7 @@ function WhatWeOffer() {
             htmlFor={`slide${e}`}
             key={e}
             className={`w-5 aspect-square rounded-full ${
-              e === slide ? "bg-[var(--text-active)]" : "bg-white"
+              e === slide ? "bg-[var(--text-active)]" : "bg-navlink-active"
             }`}
             onClick={() => setSlide(e)}
           >

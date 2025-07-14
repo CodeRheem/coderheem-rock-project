@@ -1,3 +1,5 @@
+import whoweare from '../assets/Images/whosection_image.jpg'
+
 function WhoSection() {
   return (
     <section className="py-16 px-8 md:px-16 flex gap-6 md:gap-12 flex-col md:items-center">
@@ -13,7 +15,7 @@ function WhoSection() {
         <div
           className="aspect-square inline-flex w-[300px] border-12 border-[var(--text-active)] rounded-full bg-cover"
           style={{
-            backgroundImage: `url(../assest/Images/whosection_image.png)`,
+            backgroundImage: `url(${whoweare})`,
             backgroundPosition: "0px -30px",
           }}
         ></div>

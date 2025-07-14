@@ -19,7 +19,7 @@ function OurVision() {
         </p>
         <img
           src="icons/vision.svg"
-          className="w-full md:w-[50vw] mt-8 md:-mt-36"
+          className="w-full md:w-[40vw] mt-8 md:-mt-36"
           alt=""
         />
       </div>

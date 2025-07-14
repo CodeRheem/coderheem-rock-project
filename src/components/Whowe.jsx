@@ -1,6 +1,6 @@
 function Whowe() {
   return (
-    <section className="h-[90vh] md:h-[552px] flex justify-center relative py-32 text-3xl md:text-5xl/normal font-bold text-center">
+    <section className="h-[60vh] md:h-[552px] flex justify-center relative py-32 text-3xl md:text-5xl/normal font-bold text-center">
       <img
         src="icons/green_hand.svg"
         alt=""
