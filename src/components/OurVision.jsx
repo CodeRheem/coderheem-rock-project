@@ -1,3 +1,13 @@
+// Import all SVGs from assets/icons eagerly
+const iconImports = import.meta.glob('../assets/icons/*.svg', { eager: true });
+
+// Create an icon map: { polygon1: '/path/to/Polygon1.svg', vision: '/path/to/vision.svg' }
+const iconMap = {};
+for (const path in iconImports) {
+  const fileName = path.split('/').pop().replace('.svg', '').toLowerCase();
+  iconMap[fileName] = iconImports[path].default;
+}
+
 function OurVision() {
   return (
     <section className="py-16 items-end flex gap-6 md:gap-12 flex-col">
@@ -6,7 +16,7 @@ function OurVision() {
           Our Vision
         </h1>
         <img
-          src="icons/Polygon1.svg"
+          src={iconMap["polygon1"]}
           alt=""
           className="transform -scale-x-100 absolute w-full md:w-[55vw]"
         />
@@ -18,7 +28,7 @@ function OurVision() {
           customers putting safety, convenience, and quality service first.
         </p>
         <img
-          src="icons/vision.svg"
+          src={iconMap["vision"]}
           className="w-full md:w-[40vw] mt-8 md:-mt-36"
           alt=""
         />

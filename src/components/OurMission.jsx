@@ -1,3 +1,14 @@
+
+// Import all SVGs from src/assets/icons eagerly
+const iconImports = import.meta.glob('../assets/icons/*.svg', { eager: true });
+
+// Create a map of icon file names (without extension) to their URLs
+const iconMap = {};
+for (const path in iconImports) {
+  const fileName = path.split('/').pop().replace('.svg', '').toLowerCase();
+  iconMap[fileName] = iconImports[path].default;
+}
+
 function OurMission() {
   return (
     <section className="py-16 flex gap-6 md:gap-12 flex-col">
@@ -6,7 +17,7 @@ function OurMission() {
           Our Mission
         </h1>
         <img
-          src="icons/Polygon1.svg"
+          src={iconMap["polygon1"]}
           alt=""
           className="absolute w-full md:w-[55vw]"
         />
@@ -18,7 +29,7 @@ function OurMission() {
           customers putting safety, convenience, and quality service first.
         </p>
         <img
-          src="icons/mission.svg"
+          src={iconMap["mission"]}
           className="w-full md:w-[50vw] mt-8 md:-mt-36 self-end"
           alt=""
         />
@@ -28,3 +39,4 @@ function OurMission() {
 }
 
 export default OurMission;
+
